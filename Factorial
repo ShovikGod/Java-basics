@@ -1,0 +1,19 @@
+import java.util.*;
+class Factorial
+{
+    int factorial(int n)
+    {
+        if(n<2)
+            return n;
+        else
+            return n*factorial(n-1);
+    }
+    public static void main()
+    { 
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter an integer:");
+        int n=sc.nextInt();
+        Factorial f=new Factorial();
+        System.out.println(f.factorial(n));
+    }
+}
