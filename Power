@@ -1,0 +1,21 @@
+import java.util.*;
+class Power
+{
+    int power(int x, int a)
+    {
+        if(a==1)
+            return x;
+        else
+            return x*power(x, a-1);
+    }
+    public static void main()
+    { 
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter an integer:");
+        int x=sc.nextInt();
+        System.out.println("Enter its power:");
+        int a=sc.nextInt();
+        Power p=new Power();
+        System.out.println(p.power(x, a));
+    }
+}
